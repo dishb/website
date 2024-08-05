@@ -1,0 +1,204 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+
+html {
+    box-sizing: border-box;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+    padding: 0;
+	outline: inherit;
+    font-size: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.25rlh;
+    font-size: 1.125rem;
+}
+
+a, a:visited {
+    color: inherit;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+}
+
+footer {
+    margin-top: 20rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#contact {
+    margin-top: 1rem;
+}
+
+#contact > a {
+    margin-right: 1rem;
+}
+
+#contact:last-child {
+    margin-right: 0;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#title {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#content {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+#content:last-child {
+    margin-bottom: 0;
+}
+
+/* #theme-toggle {
+    position: absolute;
+    z-index: 99;
+    font-size: 1.5rem;
+    left: 2rem;
+    top: 2rem;
+} */
+
+#scroll-up {
+    position: absolute;
+    z-index: 98;
+    font-size: 1.5rem;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.project, .about-me, .skills {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.fa-arrow-up-right-from-square {
+    font-size: 1.125rem;
+}
+
+.section-heading {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.section-heading, .heading {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.heading > h3, .heading > a  {
+    margin-right: 1rem;
+}
+
+.light-mode {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color: #FFFFFF;
+}
