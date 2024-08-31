@@ -127,7 +127,7 @@ footer {
 }
 
 #content {
-    width: 90%;
+    width: 87%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -140,20 +140,22 @@ footer {
     margin-bottom: 0;
 }
 
-/* #theme-toggle {
-    position: absolute;
+#theme-toggle {
+    position: fixed;
     z-index: 99;
     font-size: 1.5rem;
     left: 2rem;
     top: 2rem;
-} */
+    display: none;
+}
 
 #scroll-up {
-    position: absolute;
-    z-index: 98;
+    position: fixed;
+    z-index: 99;
     font-size: 1.5rem;
-    right: 1rem;
-    bottom: 1rem;
+    right: 2rem;
+    bottom: 2rem;
+    display: none;
 }
 
 .project, .about-me, .skills {
@@ -206,6 +208,10 @@ footer {
 @media (min-width: 768px) {
     #content {
         width: 70%;
+    }
+
+    #scroll-up, #theme-toggle {
+        display: inline-block;
     }
 }
 
