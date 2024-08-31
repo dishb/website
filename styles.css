@@ -210,7 +210,7 @@ footer {
         width: 70%;
     }
 
-    #scroll-up, #theme-toggle {
+    #theme-toggle {
         display: inline-block;
     }
 }
