@@ -9,6 +9,7 @@ const content = document.querySelector('#content');
 const links = document.querySelectorAll('a');
 
 // Other variables needed in the script
+
 const mediaQuery = (window.innerWidth >= 768);
 
 // Dark mode or light mode toggle functionality
