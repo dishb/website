@@ -141,14 +141,14 @@ footer {
     margin-bottom: 0;
 }
 
-#theme-toggle {
+/* #theme-toggle {
     position: fixed;
     z-index: 99;
     font-size: 1.5rem;
     left: 2rem;
     top: 2rem;
     display: none;
-}
+} */
 
 #scroll-up {
     position: fixed;
@@ -206,20 +206,14 @@ footer {
     color: #FFFFFF;
 }
 
-@media (min-width: 425px) {
-    #scroll-up {
-        display: none;
-    }
-}
-
 @media (min-width: 768px) {
     #content {
         width: 70%;
     }
 
-    #theme-toggle {
+    /* #theme-toggle {
         display: inline-block;
-    }
+    } */
 }
 
 @media (min-width: 1024px) {

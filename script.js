@@ -8,13 +8,9 @@ const scrollUp = document.querySelector('#scroll-up');
 const content = document.querySelector('#content');
 const links = document.querySelectorAll('a');
 
-// Other variables needed in the script
-
-const mediaQuery = (window.innerWidth >= 768);
-
 // Dark mode or light mode toggle functionality
 
-// if (mediaQuery) {
+// if (window.innerWidth >= 768) {
 //     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 //         document.body.classList.add('dark-mode');
 //         document.body.classList.remove('light-mode');
@@ -42,7 +38,9 @@ scrollUp.addEventListener('click', () => {
 
 window.onscroll = () => {
     if (document.body.scrollTop >= hero.offsetHeight || document.documentElement.scrollTop >= hero.offsetHeight) {
-        scrollUp.style.display = 'inline-block';
+        if (window.innerWidth >= 425) {
+            scrollUp.style.display = 'inline-block';
+        }
     } else {
         scrollUp.style.display = 'none';
     }
