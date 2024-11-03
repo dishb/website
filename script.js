@@ -38,7 +38,7 @@ scrollUp.addEventListener('click', () => {
 
 window.onscroll = () => {
     if (document.body.scrollTop >= hero.offsetHeight || document.documentElement.scrollTop >= hero.offsetHeight) {
-        if (window.innerWidth >= 425) {
+        if (window.innerWidth >= 768) {
             scrollUp.style.display = 'inline-block';
         }
     } else {
