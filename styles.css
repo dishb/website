@@ -206,6 +206,12 @@ footer {
     color: #FFFFFF;
 }
 
+@media (min-width: 425px) {
+    #scroll-up {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     #content {
         width: 70%;
