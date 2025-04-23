@@ -24,13 +24,9 @@ const links = document.querySelectorAll('a');
 //     themeToggleIcon.classList.toggle('fa-moon');
 // })
 
-// Scroll down to content functionality
-
 scrollDown.addEventListener('click', () => {
     content.scrollIntoView();
 })
-
-// Scroll up to hero functionality
 
 scrollUp.addEventListener('click', () => {
     hero.scrollIntoView();
@@ -45,8 +41,6 @@ window.onscroll = () => {
         scrollUp.style.display = 'none';
     }
 }
-
-// Add some common attributes to every link element
 
 for (let link of links) {
     link.setAttribute('target', '_blank');
