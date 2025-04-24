@@ -82,14 +82,20 @@ p {
 
 a, a:visited {
     color: inherit;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1.5px;
+}
+
+a {
+    text-decoration: none;
 }
 
 footer {
     margin-top: 20rem;
     margin-bottom: 3rem;
     text-align: center;
+}
+
+i {
+    transition: color 0.15s linear;
 }
 
 #contact {
@@ -159,6 +165,18 @@ footer {
     display: none;
 }
 
+#scroll-up, #scroll-down {
+    transition: transform 0.15s ease-in-out;
+}
+
+#scroll-up:hover {
+    transform: translateY(-5px);
+}
+
+#scroll-down:hover {
+    transform: translateY(5px);
+}
+
 .project, .about-me, .skills {
     width: 100%;
     margin-bottom: 3rem;
@@ -170,8 +188,8 @@ footer {
     gap: 1rem;
 }
 
-.fa-arrow-up-right-from-square {
-    font-size: 1.125rem;
+.skills i, #contact i {
+    font-size: 1.375rem;
 }
 
 .section-heading {
@@ -186,7 +204,7 @@ footer {
     font-size: 1.25rem;
 }
 
-.section-heading, .heading {
+.section-heading, h3 {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
@@ -204,6 +222,72 @@ footer {
 .dark-mode {
     background-color: #000000;
     color: #FFFFFF;
+}
+
+.nf-md-arrow_top_right {
+    display: inline-block;
+    font-size: 1rem;
+    transition: transform 0.15s ease-in-out;
+}
+
+.nf-md-arrow_top_right:hover{
+    transform: translate(3px, -3px);
+}
+
+.nf-md-language_python:hover {
+    color: #306998;
+}
+
+.nf-md-language_html5:hover {
+    color: #E34F26;
+}
+
+.nf-md-language_css3:hover {
+    color: #1572B6;
+}
+
+.nf-md-language_javascript:hover {
+    color: #F7DF1E;
+}
+
+.nf-md-language_typescript:hover {
+    color: #3178C6;
+}
+
+.nf-md-react:hover {
+    color: #61DAFB;
+}
+
+.nf-md-git:hover {
+    color: #F05032;
+}
+
+.nf-fa-figma:hover {
+    color: #F24E1E;
+}
+
+.nf-md-github:hover {
+    color: #6E5494;
+}
+
+.nf-md-npm:hover {
+    color: #CB3837;
+}
+
+.nf-md-font_awesome:hover {
+    color: #339AF0;
+}
+
+.nf-md-gmail:hover {
+    color: #D14836;
+}
+
+.nf-md-linkedin:hover {
+    color: #0077B5;
+}
+
+.nf-md-twitter:hover {
+    color: #1DA1F2;
 }
 
 @media (min-width: 768px) {
