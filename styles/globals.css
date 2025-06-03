@@ -286,10 +286,6 @@ i {
     color: #0077B5;
 }
 
-.nf-md-twitter:hover {
-    color: #1DA1F2;
-}
-
 @media (min-width: 768px) {
     #content {
         width: 70%;
