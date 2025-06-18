@@ -204,6 +204,16 @@ i {
     font-size: 1.25rem;
 }
 
+.tech-stack {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tech-stack i {
+    font-size: 1.25rem;
+}
+
 .section-heading, h3 {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
@@ -284,6 +294,18 @@ i {
 
 .nf-md-linkedin:hover {
     color: #0077B5;
+}
+
+.nf-dev-nextjs:hover {
+    color: #7d7d7d;
+}
+
+.nf-dev-mongodb:hover {
+    color: #00684A;
+}
+
+.nf-md-tailwind:hover {
+    color: #0EA5E9;
 }
 
 @media (min-width: 768px) {

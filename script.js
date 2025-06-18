@@ -2,11 +2,11 @@
 
 // const themeToggle = document.querySelector('#theme-toggle');
 // const themeToggleIcon = document.querySelector('#theme-toggle > i');
-const hero = document.querySelector('#hero');
-const scrollDown = document.querySelector('#scroll-down');
-const scrollUp = document.querySelector('#scroll-up');
-const content = document.querySelector('#content');
-const links = document.querySelectorAll('a');
+const hero = document.querySelector("#hero");
+const scrollDown = document.querySelector("#scroll-down");
+const scrollUp = document.querySelector("#scroll-up");
+const content = document.querySelector("#content");
+const links = document.querySelectorAll("a");
 
 // Dark mode or light mode toggle functionality
 
@@ -24,25 +24,28 @@ const links = document.querySelectorAll('a');
 //     themeToggleIcon.classList.toggle('fa-moon');
 // })
 
-scrollDown.addEventListener('click', () => {
-    content.scrollIntoView();
-})
+scrollDown.addEventListener("click", () => {
+  content.scrollIntoView();
+});
 
-scrollUp.addEventListener('click', () => {
-    hero.scrollIntoView();
-})
+scrollUp.addEventListener("click", () => {
+  hero.scrollIntoView();
+});
 
 window.onscroll = () => {
-    if (document.body.scrollTop >= hero.offsetHeight || document.documentElement.scrollTop >= hero.offsetHeight) {
-        if (window.innerWidth >= 768) {
-            scrollUp.style.display = 'inline-block';
-        }
-    } else {
-        scrollUp.style.display = 'none';
+  if (
+    document.body.scrollTop >= hero.offsetHeight ||
+    document.documentElement.scrollTop >= hero.offsetHeight
+  ) {
+    if (window.innerWidth >= 768) {
+      scrollUp.style.display = "inline-block";
     }
-}
+  } else {
+    scrollUp.style.display = "none";
+  }
+};
 
 for (let link of links) {
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
 }
