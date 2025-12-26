@@ -1,5 +1,3 @@
-// Select all of the elements needed in the script
-
 // const themeToggle = document.querySelector('#theme-toggle');
 // const themeToggleIcon = document.querySelector('#theme-toggle > i');
 const hero = document.querySelector("#hero");
@@ -7,8 +5,6 @@ const scrollDown = document.querySelector("#scroll-down");
 const scrollUp = document.querySelector("#scroll-up");
 const content = document.querySelector("#content");
 const links = document.querySelectorAll("a");
-
-// Dark mode or light mode toggle functionality
 
 // if (window.innerWidth >= 768) {
 //     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
