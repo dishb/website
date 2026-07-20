@@ -9,7 +9,7 @@ export default function Card({ children, className }: CardProps) {
   return (
     <div
       className={twMerge(
-        "border border-light-gray w-full rounded-5xl",
+        "border border-light-gray w-full rounded-5xl bg-background",
         className,
       )}
     >

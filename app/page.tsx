@@ -2,7 +2,27 @@ import gradients from "@/data/gradients";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import { ArrowRight } from "lucide-react";
-
+import {
+  SiReact,
+  SiTailwindcss,
+  SiCursor,
+  SiPython,
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+  SiShopify,
+  SiPosthog,
+  SiFirebase,
+  SiMongodb,
+  SiCss,
+  SiHtml5,
+  SiNumpy,
+  SiPytorch,
+  SiVercel,
+  SiGithub,
+  SiGit,
+  SiFigma,
+} from "@icons-pack/react-simple-icons";
 export default function Page() {
   return (
     <>
@@ -39,30 +59,41 @@ export default function Page() {
         <Card
           className={`border-0 ${gradients.green} flex flex-col items-center justify-center`}
         >
-          <Button className="absolute bottom-10 right-10" href="/about">
+          <Button className="absolute bottom-10 right-10" href="/work">
             Check out my work
             <ArrowRight className="size-5" />
           </Button>
         </Card>
       </div>
 
-      <div className="flex gap-15">
-        <Card className="flex flex-col items-center justify-center gap-2 aspect-square">
-          <p>Education</p>
-          <p className="text-muted max-w-60">
-            Senior at Amador Valley High School in Pleasanton, CA
-          </p>
-        </Card>
+      <div className="flex flex-col items-center justify-center py-50">
+        <p>Toolbox</p>
+        <p className="text-muted mt-2">
+          My projects have given me experience with various technologies and
+          products.
+        </p>
 
-        <Card className="flex flex-col items-center justify-center gap-2 aspect-square">
-          <p>Current</p>
-          <p className="text-muted max-w-60">Tech Lead Intern at Arttitude</p>
-        </Card>
-
-        <Card className="flex flex-col items-center justify-center gap-2 aspect-square">
-          <p>Interested?</p>
-          <p className="text-muted max-w-60">Tech Lead Intern at Arttitude</p>
-        </Card>
+        <div className="flex justify-center gap-4 items-center mt-10">
+          <SiReact />
+          <SiHtml5 />
+          <SiTypescript />
+          <SiJavascript />
+          <SiNextdotjs />
+          <SiTailwindcss />
+          <SiCss />
+          <SiPython />
+          <SiNumpy />
+          <SiPytorch />
+          <SiCursor />
+          <SiShopify />
+          <SiPosthog />
+          <SiFirebase />
+          <SiMongodb />
+          <SiVercel />
+          <SiGit />
+          <SiGithub />
+          <SiFigma />
+        </div>
       </div>
     </>
   );
