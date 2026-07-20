@@ -73,7 +73,7 @@ export default function Page() {
           products.
         </p>
 
-        <div className="flex justify-center gap-4 items-center mt-10">
+        <div className="grid gap-4 mt-10 grid-cols-9">
           <SiReact />
           <SiHtml5 />
           <SiTypescript />

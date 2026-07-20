@@ -5,6 +5,7 @@ import "./globals.css";
 import { Heart } from "lucide-react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import contactLinks from "@/data/contactLinks";
 
 const googleSansFlex = Google_Sans_Flex({
   variable: "--font-google-sans-flex",
@@ -56,30 +57,17 @@ export default function RootLayout({
                 Built with <Heart className="size-4" /> in USA
               </p>
               <div className="flex gap-2 items-center">
-                <Link
-                  className="ease-in-out transition-all hover:text-foreground hover:cursor-pointer"
-                  href="https://linkedin.com/in/dishant-bhandula/"
-                >
-                  LinkedIn
-                </Link>
-                <Link
-                  className="ease-in-out transition-all hover:text-foreground hover:cursor-pointer"
-                  href="https://figma.com/@dishb"
-                >
-                  Figma
-                </Link>
-                <Link
-                  className="ease-in-out transition-all hover:text-foreground hover:cursor-pointer"
-                  href="mailto:code.dishb@gmail.com"
-                >
-                  Email
-                </Link>
-                <Link
-                  className="ease-in-out transition-all hover:text-foreground hover:cursor-pointer"
-                  href="https://github.com/dishb"
-                >
-                  GitHub
-                </Link>
+                {contactLinks.map((contactLink, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      className="ease-in-out transition-all hover:text-foreground hover:cursor-pointer"
+                      href={contactLink.href}
+                    >
+                      {contactLink.label}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </Card>
