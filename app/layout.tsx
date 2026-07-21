@@ -36,7 +36,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex flex-col gap-15">{children}</main>
 
-        <footer className="mt-15 pb-15">
+        <footer className="mt-15 pb-10">
           <Card className="h-100 flex flex-col justify-end p-10 gap-2 text-muted">
             <div className="flex w-full justify-between items-center">
               <p>Copyright &copy; 2026</p>

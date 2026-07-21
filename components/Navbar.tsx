@@ -43,10 +43,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="flex justify-between items-center py-10">
+    <nav className="flex justify-between items-center pt-10 mb-15">
       <Link
         href="/"
-        className="border border-light-gray px-6 py-2 rounded-full hover:bg-light-gray/30 transition-colors ease-in-out"
+        className="border border-light-gray px-6 py-2 rounded-full hover:bg-light-gray/30 transition-all ease-in-out"
       >
         Dishant B
       </Link>
@@ -54,14 +54,14 @@ export default function Navbar() {
       <div className="flex gap-8">
         <Link
           href="/about"
-          className="border border-light-gray px-6 py-2 rounded-full hover:bg-light-gray/30 transition-colors ease-in-out"
+          className="border border-light-gray px-6 py-2 rounded-full hover:bg-light-gray/30 transition-all ease-in-out"
         >
           About
         </Link>
 
         <div className="relative" ref={workRef}>
           <Button
-            className="border border-light-gray px-6 text-foreground py-2 rounded-full hover:bg-light-gray/30 transition-colors ease-in-out"
+            className="border border-light-gray px-6 text-foreground py-2 rounded-full hover:bg-light-gray/30 transition-all ease-in-out"
             onClick={() => {
               setWorkMenuOpen(!workMenuOpen);
               setContactMenuOpen(false);
@@ -89,15 +89,15 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/about"
-          className="border border-light-gray px-6 py-2 rounded-full hover:bg-light-gray/30 transition-colors ease-in-out"
+          href="/resume"
+          className="border border-light-gray px-6 py-2 rounded-full hover:bg-light-gray/30 transition-all ease-in-out"
         >
           Resume
         </Link>
 
         <div className="relative" ref={contactRef}>
           <Button
-            className="border border-light-gray px-6 text-foreground py-2 rounded-full hover:bg-light-gray/30 transition-colors ease-in-out"
+            className="border border-light-gray px-6 text-foreground py-2 rounded-full hover:bg-light-gray/30 transition-all ease-in-out"
             onClick={() => {
               setContactMenuOpen(!contactMenuOpen);
               setWorkMenuOpen(false);

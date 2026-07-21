@@ -15,7 +15,7 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const combinedClasses = twMerge(
-    "px-6 py-2 rounded-full border border-background text-background flex gap-1 items-center ease-in-out transition-colors hover:cursor-pointer hover:bg-background/20",
+    "px-6 py-2 rounded-full border border-background text-background flex gap-1 items-center ease-in-out transition-all hover:cursor-pointer hover:bg-background/20",
     className,
   );
 
