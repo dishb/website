@@ -6,6 +6,7 @@ interface ButtonProps {
   className?: string;
   href?: string;
   onClick?: () => void;
+  dark?: boolean;
 }
 
 export default function Button({
@@ -13,9 +14,11 @@ export default function Button({
   className,
   href,
   onClick,
+  dark,
 }: ButtonProps) {
+  const color = dark ? "foreground" : "background";
   const combinedClasses = twMerge(
-    "px-6 py-2 rounded-full border border-background text-background flex gap-1 items-center ease-in-out transition-all hover:cursor-pointer hover:bg-background/20",
+    `px-6 py-2 rounded-full border border-${color} text-${color} hover:bg-${color}/10 flex gap-1 items-center ease-in-out transition-all hover:cursor-pointer`,
     className,
   );
 

@@ -39,13 +39,6 @@ export default function Page() {
         </Card>
       </div>
 
-      <Card className={`border-0 ${gradients.blue} h-140`}>
-        <Button className="absolute bottom-10 left-10" href="/about">
-          About me
-          <ArrowRight className="size-5" />
-        </Button>
-      </Card>
-
       <div className="flex gap-15 h-140">
         <Card className="flex flex-col items-center justify-center">
           <p className="text-muted max-w-75">
@@ -56,15 +49,20 @@ export default function Page() {
           </p>
         </Card>
 
-        <Card
-          className={`border-0 ${gradients.green} flex flex-col items-center justify-center`}
-        >
-          <Button className="absolute bottom-10 right-10" href="/work">
-            Check out my work
+        <Card className="flex flex-col items-center justify-center relative">
+          <Button className="absolute bottom-10 right-10" href="/about" dark>
+            About me
             <ArrowRight className="size-5" />
           </Button>
         </Card>
       </div>
+
+      <Card className={`border-0 ${gradients.blue} h-140 relative`}>
+        <Button className="absolute bottom-10 left-10" href="/resume">
+          View my resume
+          <ArrowRight className="size-5" />
+        </Button>
+      </Card>
 
       <div className="flex flex-col items-center justify-center py-50">
         <p>Toolbox</p>

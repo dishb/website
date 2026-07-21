@@ -7,15 +7,8 @@ export default function Page() {
       <div className="flex flex-col items-center justify-center py-50 gap-2">
         <h1>Resume</h1>
         <h2 className="text-muted">
-          Alternatively, you can download the PDF version of my resume{" "}
-          <Link
-            href="/Dishant_Bhandula_Resume.pdf"
-            className="hover:text-foreground transition-all ease-in-out"
-            download={"Dishant_Bhandula_Resume.pdf"}
-          >
-            here
-          </Link>
-          .
+          My professional experience as a student spans various positions at
+          many organizations.
         </h2>
       </div>
 

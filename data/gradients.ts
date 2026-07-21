@@ -1,3 +1,23 @@
+/*
+Usage:
+
+pink: /
+fuchsia:
+purple:
+violet:
+indigo:
+blue: /
+sky:
+cyan:
+teal:
+emerald:
+green:
+lime:
+yellow:
+amber:
+orange:
+*/
+
 const gradients = {
   pink: "from-rose-500 via-pink-500 to-fuchsia-500 bg-gradient-to-tr noise",
   fuchsia:
