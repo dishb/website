@@ -9,11 +9,11 @@ indigo:
 blue: /
 sky:
 cyan:
-teal:
+teal: /about
 emerald:
 green:
 lime:
-yellow:
+yellow: /about
 amber:
 orange:
 */

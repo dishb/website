@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-muted: #808080;
+  --color-muted: #6b6b6b;
   --color-light-gray: #dedede;
   --font-sans: var(--font-google-sans-flex);
   --font-mono: var(--font-google-sans-code);

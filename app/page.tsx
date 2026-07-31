@@ -71,7 +71,7 @@ export default function Page() {
           products.
         </p>
 
-        <div className="grid gap-4 mt-10 grid-cols-9">
+        <div className="grid gap-8 mt-10 grid-cols-8">
           <SiReact />
           <SiHtml5 />
           <SiTypescript />

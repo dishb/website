@@ -16,9 +16,13 @@ export default function Button({
   onClick,
   dark,
 }: ButtonProps) {
-  const color = dark ? "foreground" : "background";
+  const colorClasses = dark
+    ? "border-foreground text-foreground hover:bg-foreground/10"
+    : "border-background text-background hover:bg-background/10";
+
   const combinedClasses = twMerge(
-    `px-6 py-2 rounded-full border border-${color} text-${color} hover:bg-${color}/10 flex gap-1 items-center ease-in-out transition-all hover:cursor-pointer`,
+    "px-6 py-2 rounded-full border flex gap-1 items-center ease-in-out transition-all hover:cursor-pointer",
+    colorClasses,
     className,
   );
 
