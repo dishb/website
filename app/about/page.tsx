@@ -33,16 +33,13 @@ export default function Page() {
       </div>
 
       <div className="flex flex-col items-center justify-center py-50">
-        <div className="flex flex-col">
-          <p className="text-muted">
-            I believe that the <span className="text-foreground">design</span>{" "}
-            of a project or tool is just as important as the{" "}
-            <span className="text-foreground">code</span>.
-          </p>
-          <p className="text-muted">
-            As a result, I like playing around with styles and ideas.
-          </p>
-        </div>
+        <p className="text-muted max-w-140">
+          I believe that the <span className="text-foreground">design</span> of
+          a project or tool is just as important as the{" "}
+          <span className="text-foreground">code</span> behind it. As a result,
+          I like <span className="text-foreground">exploring</span> different
+          styles and ideas.
+        </p>
       </div>
 
       <Card className="flex flex-col items-center justify-center h-140 gap-10">

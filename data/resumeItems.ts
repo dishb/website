@@ -28,7 +28,7 @@ const resumeItems: {
       imageSrc: "/aristo_ai.jpeg",
       title: "Quality Assurance Intern",
       company: "Aristo AI",
-      date: "April 2025 - May 2025",
+      date: "Apr. 2025 - May 2025",
     },
     {
       imageSrc: "/asdrp.jpeg",
